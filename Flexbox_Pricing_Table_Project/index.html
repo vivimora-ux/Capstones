@@ -16,15 +16,16 @@
       .pricing-container{
         display: flex;
         gap: 2rem;
-        height: 50vh;
+        height: 100vh;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
       }
       .pricing-plan {
+        flex: 1;
         border: solid #e5e5e5;
         border-radius: 1rem;
         background-color: #fff;
-        flex-basis: 300px;
+        max-width: 400px;
         justify-content: center;
 
       }
@@ -71,6 +72,13 @@
       }
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction:column;
+          height: 100%;
+        }
+        .pricing-plan {
+          min-width: 400px;
+        }
       }
     </style>
   </head>
