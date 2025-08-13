@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      margin: 0;
+      padding: 0;
+      
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .gallery {
+      background-color: #232629;
+      width: 1000px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      padding: 5.5rem;
+      border-radius: 1rem;
+    }
+    .art {
+      grid-column-gap: 2px;
+      grid-row-gap: 2px;
+      background: #232629;
+    }
+    .mondrian {
+      display: grid;
+      grid-template-columns: repeat(10, 26px);
+      grid-template-rows: 22px 9px 18px 16px 16px 19px 19px 19px 19px 14px 14px 20px 10px 17px 10px 20px;
+    }
+    .item {background-color: #ededed;}
+    .red {background-color: #E72F24; grid-row: span 5; grid-column: span 4;}
+    .blue {background-color: #004592; grid-row: span 2; grid-column: span 2;}
+    .black {background-color: #232629;} 
+
+    .white1 {grid-row: span 4;}
+    .yellow {background-color: #F9D01E; grid-row: span 1; grid-column: span 3;}
+    .white2 {grid-row: span 1; grid-column: span 3;}
+    .white3 {grid-row: span 1; grid-column: span 2;}
+    .white4 {grid-row: span 2;}
+    .white5 {grid-column: span 2; grid-row: span 3;}
+    .blue {grid-row: span 2; }
+    .black {grid-row: span 3; grid-column: span 2;}
+    .white6 {grid-row: span 4;}
+
+    .yellow1 {background-color: #F9D01E; grid-column: span 2;}
+    .black1 {background-color: #232629; grid-row: span 2;}
+    .white7 {grid-row: span 2;}
+    .white8 {grid-row: span 2;}
+
+    .white9 {grid-column: span 2;}
+
+    .red1 {background-color: #E72F24; grid-row: span 2; grid-column: span 2;}
+    .white10 {grid-row: span 2;}
+    .white11 {grid-column: span 2;}
+    .yellow2 {background-color: #F9D01E; grid-column: span 2; grid-row: span 2;}
+    .yellow3 {background-color: #F9D01E; grid-row: span 2;}
+
+    .white12 {grid-column: span 2;}
+
+
+    .yellow4 {background-color: #F9D01E; grid-row: span 2;}
+    .yellow5 {background-color: #F9D01E; grid-column: span 2; grid-row: span 2;}
+    .white13 {grid-column: span 2;}
+    .white14 {grid-row: span 2;}
+    .red1 {background-color: #E72F24; grid-row: span 2; grid-column: span 2;}
+    .blue {background-color: #004592; grid-row: span 2; grid-column: span 2;}
+
+    .white15 {grid-column: span 2;}
+
+    .white16 {grid-row: span 4;}
+    .blue1 {background-color: #004592; grid-row: span 5; grid-column: span 4;}
+    .white17, .white18 {grid-row: span 2;}
+    .yellow6 {background-color: #F9D01E; grid-row: span 2;}
+    .yellow7 {background-color: #F9D01E; grid-row: span 1;}
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="gallery">
+      <div class="art mondrian">
+        <div class="item white1"></div>
+        <div class="item yellow"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+
+        <div class="item white5"></div>
+        <div class="item black"></div>
+        <div class="item red"></div>
+        <div class="item white6"></div>
+
+        <div class="item yellow1"></div>
+        <div class="item black1"></div>
+        <div class="item white7"></div>
+        <div class="item white8"></div>
+
+        <div class="item white9"></div>
+
+        <div class="item red1"></div>
+        <div class="item blue"></div>
+        <div class="item white10"></div>
+        <div class="item white11"></div>
+        <div class="item yellow2"></div>
+        <div class="item yellow3"></div>
+
+        <div class="item white12"></div>
+
+        <div class="item yellow4"></div>
+        <div class="item yellow5"></div>
+        <div class="item white13"></div>
+        <div class="item white14"></div>
+        <div class="item red1"></div>
+        <div class="item blue"></div>
+
+        <div class="item white15"></div>
+
+        <div class="item white16"></div>
+        <div class="item blue1"></div>
+        <div class="item white17"></div>
+        <div class="item white18"></div>
+        <div class="item black1"></div>
+        <div class="item yellow6"></div>
+        <div class="item yellow7"></div>
+
+        <div class="item black"></div>
+        <div class="item white5"></div>
+        <div class="item white6"></div>
+
+        <div class="item white4"></div>
+        <div class="item white9"></div>
+        <div class="item white2"></div>
+        <div class="item yellow"></div>
+      </div>
+
+      <div class="art mondrian">
+        <div class="item white1"></div>
+        <div class="item yellow"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+
+        <div class="item white5"></div>
+        <div class="item black"></div>
+        <div class="item red"></div>
+        <div class="item white6"></div>
+
+        <div class="item yellow1"></div>
+        <div class="item black1"></div>
+        <div class="item white7"></div>
+        <div class="item white8"></div>
+
+        <div class="item white9"></div>
+
+        <div class="item red1"></div>
+        <div class="item blue"></div>
+        <div class="item white10"></div>
+        <div class="item white11"></div>
+        <div class="item yellow2"></div>
+        <div class="item yellow3"></div>
+
+        <div class="item white12"></div>
+
+        <div class="item yellow4"></div>
+        <div class="item yellow5"></div>
+        <div class="item white13"></div>
+        <div class="item white14"></div>
+        <div class="item red1"></div>
+        <div class="item blue"></div>
+
+        <div class="item white15"></div>
+
+        <div class="item white16"></div>
+        <div class="item blue1"></div>
+        <div class="item white17"></div>
+        <div class="item white18"></div>
+        <div class="item black1"></div>
+        <div class="item yellow6"></div>
+        <div class="item yellow7"></div>
+
+        <div class="item black"></div>
+        <div class="item white5"></div>
+        <div class="item white6"></div>
+
+        <div class="item white4"></div>
+        <div class="item white9"></div>
+        <div class="item white2"></div>
+        <div class="item yellow"></div>
+      </div>
+
+      <div class="art mondrian">
+        <div class="item white1"></div>
+        <div class="item yellow"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+
+        <div class="item white5"></div>
+        <div class="item black"></div>
+        <div class="item red"></div>
+        <div class="item white6"></div>
+
+        <div class="item yellow1"></div>
+        <div class="item black1"></div>
+        <div class="item white7"></div>
+        <div class="item white8"></div>
+
+        <div class="item white9"></div>
+
+        <div class="item red1"></div>
+        <div class="item blue"></div>
+        <div class="item white10"></div>
+        <div class="item white11"></div>
+        <div class="item yellow2"></div>
+        <div class="item yellow3"></div>
+
+        <div class="item white12"></div>
+
+        <div class="item yellow4"></div>
+        <div class="item yellow5"></div>
+        <div class="item white13"></div>
+        <div class="item white14"></div>
+        <div class="item red1"></div>
+        <div class="item blue"></div>
+
+        <div class="item white15"></div>
+
+        <div class="item white16"></div>
+        <div class="item blue1"></div>
+        <div class="item white17"></div>
+        <div class="item white18"></div>
+        <div class="item black1"></div>
+        <div class="item yellow6"></div>
+        <div class="item yellow7"></div>
+
+        <div class="item black"></div>
+        <div class="item white5"></div>
+        <div class="item white6"></div>
+
+        <div class="item white4"></div>
+        <div class="item white9"></div>
+        <div class="item white2"></div>
+        <div class="item yellow"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
