@@ -1,0 +1,35 @@
+/* Your code goes here */
+
+.justify-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    &.reverse {
+        justify-content: flex-end;
+    }
+}
+.justify-revers {
+    display: flex;
+    flex-direction: row;
+    &.end {
+    justify-content: flex-end;
+    }
+}
+.justify-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.reverse {
+    flex-direction: row-reverse;
+}  
+code {
+        display: flex;
+    &.end {
+        justify-content: flex-end;}
+    &.start {
+        justify-content: flex-start;}
+    &.center {
+        justify-content: center;}
+    
+}
